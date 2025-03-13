@@ -1,10 +1,12 @@
+// Ciclo for per generare 10 mail;
 
-// Chiamata all'API per prendere indirizzo mail;
-
-axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-.then(response => {
-    console.log("Email ricevuta:", response.data.response);
-})
-.catch(error => {
-    console.error("Errore nella richiesta API:", error);
-});
+for (let i = 0; i < 10; i++) {
+  axios
+    .get("https://flynn.boolean.careers/exercises/api/random/mail") // Chiamata all'API per prendere indirizzo mail;
+    .then((response) => {
+      console.log("Email ricevuta:", response.data.response);
+    })
+    .catch((error) => {
+      console.error("Errore nella richiesta API:", error);
+    });
+}
