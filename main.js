@@ -1,6 +1,9 @@
 const ulElement = document.getElementById("email-list"); // Seleziona la lista <ul>
+const refreshMail = document.getElementById("generate-button");
 
 const generateTenMail = function () { // creao una funzione e la salvo in una variabile
+
+    ulElement.innerHTML = ""; // Svuota la lista prima di generare nuove email (prima del ciclo for)
   
   for (let i = 0; i < 10; i++) {  // Ciclo for per generare 10 mail;
     
@@ -19,5 +22,7 @@ const generateTenMail = function () { // creao una funzione e la salvo in una va
       });
   }
 };
-
+refreshMail.addEventListener("click", generateTenMail); // Associa la funzione al click del bottone
 generateTenMail(); //invoco la funzione
+
+
