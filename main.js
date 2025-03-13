@@ -1,5 +1,6 @@
 
-function generateMail() {
+// creao una funzione e la salvo in una variabile
+const generateTenMail = function() {
     // Ciclo for per generare 10 mail;
     for (let i = 0; i < 10; i++) {
         axios
@@ -11,9 +12,10 @@ function generateMail() {
                 console.error("Errore nella richiesta API:", error);
             });
     }
-}
+};
 
-generateMail();
+generateTenMail(); //invoco la funzione
+
 
 
 
