@@ -1,4 +1,4 @@
-const ulElement = document.getElementById("email-list"); // Seleziona la lista <ul>
+const ulElement = document.querySelector(".email-list"); // Seleziona la lista <ul>
 const refreshMail = document.getElementById("generate-button");
 
 const generateTenMail = function () { // creao una funzione e la salvo in una variabile

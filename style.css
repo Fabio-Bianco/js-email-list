@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the title */
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* Center the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.email-container {
+    background-color: #f0f0f0; 
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
